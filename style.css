@@ -396,4 +396,863 @@
         padding: 0 20px;
     }
 }
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main container */
+.things-you-need {
+    border-radius: 0;
+}
+
+/* Background container */
+.bg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 5rem;
+    width: 100%;
+    background-color: #f8fafc;
+    /* slate-50 */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -1.5rem;
+    max-width: 100%;
+    width: 1170px;
+}
+
+/* Title styles */
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #262626;
+    /* neutral-800 */
+    max-width: 100%;
+    text-align: center;
+}
+
+.accent-text {
+    color: rgba(250, 116, 54, 1);
+}
+
+/* Description styles */
+.description {
+    margin-top: 1.5rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #78716c;
+    /* stone-500 */
+    width: 482px;
+    max-width: 100%;
+}
+
+/* Images container */
+.images-container {
+    align-self: stretch;
+    margin-top: 4rem;
+    max-width: 100%;
+}
+
+/* Images grid */
+.images-grid {
+    display: flex;
+    gap: 1.25rem;
+}
+
+/* Image columns */
+.image-column {
+    width: 33.333333%;
+}
+
+.image-column:nth-child(2),
+.image-column:nth-child(3) {
+    margin-left: 1.25rem;
+}
+
+/* Image styles */
+.image {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 0;
+}
+
+.image-1 {
+    aspect-ratio: 1.17;
+}
+
+.image-2 {
+    aspect-ratio: 1.33;
+}
+
+.image-3 {
+    aspect-ratio: 1.33;
+    border-radius: 0.5rem;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .bg-container {
+        padding: 6rem 1.25rem;
+    }
+
+    .content-wrapper {
+        margin-bottom: 0.625rem;
+    }
+
+    .title {
+        font-size: 2.25rem;
+        max-width: 100%;
+    }
+
+    .description {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .images-container {
+        margin-top: 2.5rem;
+        max-width: 100%;
+    }
+
+    .images-grid {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .image-column {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+
+    .image {
+        margin-top: 2rem;
+    }
+
+    .image-column:first-child .image {
+        margin-top: 0;
+    }
+}
+
+/* Additional responsive breakpoints for better mobile experience */
+@media (max-width: 480px) {
+    .bg-container {
+        padding: 4rem 1rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        margin-top: 1rem;
+    }
+
+    .images-container {
+        margin-top: 2rem;
+    }
+
+    .image {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Ensure images are responsive */
+@media (max-width: 640px) {
+    .image {
+        height: auto;
+        max-width: 100%;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.exclusive-deals {
+    position: relative;
+    width: 100%;
+    height: 960px;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 960px;
+    background-color: #fafafa;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translateX(-50%);
+    width: 1170px;
+    height: 720px;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 675px;
+    height: 142px;
+    text-align: center;
+}
+
+.title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 54px;
+    height: 54px;
+    width: 675px;
+    margin-bottom: 24px;
+}
+
+.title-main {
+    color: #262626;
+}
+
+.title-accent {
+    color: #fb923c;
+}
+
+.description {
+    position: absolute;
+    left: 50%;
+    top: 78px;
+    transform: translateX(-50%);
+    width: 433px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #78716c;
+}
+
+.cards-container {
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 206px;
+    gap: 28px;
+    width: 1170px;
+    height: 426px;
+}
+
+.card {
+    position: relative;
+    width: 270px;
+    height: 426px;
+}
+
+.card-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 426px;
+    background-color: #fafafa;
+    border: 2px solid rgba(120, 113, 108, 0.1);
+    border-radius: 8px;
+}
+
+.card-bg-featured {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 270px;
+    height: 426px;
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.card-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.featured .card-image {
+    left: 2px;
+    border-radius: 12px;
+}
+
+.hover-effect {
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 270px;
+    height: 290px;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 290px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.book-now-btn {
+    position: absolute;
+    top: 192px;
+    left: 71px;
+    width: 132px;
+    height: 50px;
+    background-color: #fb923c;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.book-now-btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.upper-content {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    top: 322px;
+    justify-content: space-between;
+    align-items: center;
+    width: 238px;
+    height: 26px;
+}
+
+.featured .upper-content {
+    left: 18px;
+}
+
+.destination-name {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #262626;
+}
+
+.rating-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 48px;
+    height: 24px;
+}
+
+.star-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+}
+
+.featured .star-icon {
+    border-radius: 12px;
+}
+
+.rating {
+    font-size: 16px;
+    line-height: 24px;
+    color: #78716c;
+}
+
+.featured .rating {
+    line-height: 20px;
+}
+
+.bottom-content {
+    display: flex;
+    position: absolute;
+    left: 16px;
+    top: 366px;
+    justify-content: space-between;
+    align-items: center;
+    width: 238px;
+    height: 28px;
+}
+
+.featured .bottom-content {
+    left: 18px;
+}
+
+.location-info {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.location-icon {
+    width: 13px;
+    height: 16px;
+    fill: #999999;
+}
+
+.location-content-svg {
+    width: 55px;
+    height: 20px;
+}
+
+.country {
+    font-size: 16px;
+    line-height: 20px;
+    color: #78716c;
+}
+
+.pricing-info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    width: 110px;
+    height: 28px;
+}
+
+.current-price {
+    position: relative;
+    width: 52px;
+    height: 28px;
+    background-color: #fed7aa;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-price .price {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fb923c;
+}
+
+.original-price {
+    position: relative;
+    width: 42px;
+    height: 24px;
+}
+
+.price-crossed {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #a3a3a3;
+    text-align: center;
+    width: 42px;
+}
+
+.original-price::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 3px;
+    width: 39px;
+    height: 1px;
+    background-color: #a3a3a3;
+}
+
+.slider-controls {
+    position: absolute;
+    left: 50%;
+    top: 680px;
+    transform: translateX(-50%);
+}
+
+.slider-btn {
+    width: 104px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .exclusive-deals {
+        padding: 64px 20px;
+        height: auto;
+    }
+
+    .content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 768px;
+        height: auto;
+    }
+
+    .header-content {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 36px;
+        line-height: 40px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .cards-container {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-bottom: 40px;
+        width: 100%;
+        height: auto;
+    }
+
+    .card {
+        justify-self: center;
+        width: 100%;
+        max-width: 270px;
+    }
+
+    .card-bg,
+    .card-bg-featured {
+        width: 100%;
+    }
+
+    .card-image {
+        width: 100%;
+    }
+
+    .featured .card-image {
+        left: 0;
+    }
+
+    .hover-effect {
+        left: 0;
+        width: 100%;
+    }
+
+    .hover-overlay {
+        width: 100%;
+    }
+
+    .upper-content,
+    .bottom-content {
+        width: calc(100% - 32px);
+    }
+
+    .slider-controls {
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 640px) {
+    .exclusive-deals {
+        padding: 40px 16px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .book-now-btn {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+}
+
+/* Main container */
+.vacation-plan {
+    border-radius: 0;
+}
+
+.vacation-plan__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 128px 80px;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.vacation-plan__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -24px;
+    max-width: 1170px;
+    width: 100%;
+}
+
+/* Typography */
+.vacation-plan__title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+    color: #262626;
+    text-align: center;
+    max-width: 100%;
+}
+
+.vacation-plan__title--highlight {
+    color: rgba(250, 116, 54, 1);
+}
+
+.vacation-plan__description {
+    margin-top: 24px;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: #78716c;
+    width: 521px;
+    max-width: 100%;
+}
+
+/* Cards container */
+.vacation-plan__cards {
+    align-self: stretch;
+    margin-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Individual card */
+.vacation-plan__card {
+    width: 100%;
+}
+
+.vacation-plan__card-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1px 1px 24px 1px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    border: 2px solid rgba(120, 113, 108, 0.1);
+}
+
+.vacation-plan__card--featured .vacation-plan__card-content {
+    background-color: #fafafa;
+    border: none;
+    box-shadow: 0px 16px 80px rgba(254, 147, 94, 0.2);
+}
+
+/* Card image */
+.vacation-plan__card-image {
+    width: 100%;
+    border-radius: 16px;
+    aspect-ratio: 1.13;
+    object-fit: cover;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.vacation-plan__card--featured .vacation-plan__card-image {
+    box-shadow: none;
+}
+
+/* Card info */
+.vacation-plan__card-info {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 24px;
+    max-width: 100%;
+    width: 319px;
+}
+
+.vacation-plan__card-details {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.vacation-plan__card-title {
+    font-size: 24px;
+    line-height: 1;
+    color: #262626;
+    margin: 0;
+}
+
+.vacation-plan__card-duration {
+    margin-top: 16px;
+    font-size: 16px;
+    color: #78716c;
+    align-self: flex-end;
+}
+
+.vacation-plan__card:first-child .vacation-plan__card-duration {
+    margin-right: 10px;
+}
+
+.vacation-plan__card:last-child .vacation-plan__card-duration {
+    align-self: center;
+}
+
+/* Card pricing */
+.vacation-plan__card-pricing {
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+}
+
+.vacation-plan__card-price {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fb923c;
+}
+
+.vacation-plan__card-rating {
+    display: flex;
+    gap: 8px;
+    align-self: flex-end;
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+    color: #78716c;
+    align-items: center;
+}
+
+.vacation-plan__card:nth-child(2) .vacation-plan__card-rating {
+    gap: 10px;
+}
+
+.vacation-plan__card-star {
+    width: 16px;
+    height: 16px;
+    border-radius: 12px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: auto 0;
+}
+
+.vacation-plan__card-rating-text {
+    color: #78716c;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .vacation-plan__container {
+        padding: 96px 20px;
+    }
+
+    .vacation-plan__content {
+        margin-bottom: 10px;
+    }
+
+    .vacation-plan__title {
+        font-size: 36px;
+    }
+
+    .vacation-plan__description {
+        width: 100%;
+    }
+
+    .vacation-plan__cards {
+        margin-top: 40px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .vacation-plan__card:nth-child(n+2) {
+        margin-top: 32px;
+    }
+
+    .vacation-plan__card-info {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .vacation-plan__card:last-child .vacation-plan__card-info {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .vacation-plan__card:first-child .vacation-plan__card-duration {
+        margin-right: 10px;
+    }
+
+}
 
